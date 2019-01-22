@@ -1,0 +1,13 @@
+@import './css/reset.css';
+@import './css/vars.css';
+@import './css/typography.css';
+@import './css/site-header.css';
+@import './css/speaker-tile.css';
+
+body {
+  /*  */
+}
+
+.navigatie {
+  background-image: url(./assets/img/nav-big.png);
+}
