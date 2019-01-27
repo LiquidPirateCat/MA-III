@@ -31,8 +31,12 @@
 
   <h2 class="act-titel titel"><?php echo $act['titel'];?></h2>
   <p class="act-soort titel"><?php echo $act['soort'];?></p>
-  <img class="act-foto" src="<?php echo $act['img'];?>" width="150" height="150" alt="foto">
-  <div class="act-tijd"> <?php echo $act['uur'];?></div>
+  <div >
+  <div class="foto-container-acts" style="background-image: url(<?php echo "./" . $act['img'];?>)"></div>
+  <!-- <img class="act-foto" src=""  alt="foto"> -->
+
+
+  <div class="act-tijd"> <?php echo  $act['uur'];?></div>
   <img class="act-datum" src="./assets/img/datum.png" alt="datum" width="70" height="70">
   <div class="button act-discover"><a href="index.php?page=act-detail&amp;id=<?php echo $act['id'];?>"></a> ontdek meer</div>
 
