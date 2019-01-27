@@ -69,7 +69,7 @@
         </button>
         <div id="home" class="collapse">
           <ul class="footer-li">
-            <li><a href="" class="link">Test</a></li>
+            <li><a href="" class="link ">Test</a></li>
             <li><a href="" class="link">Test</a></li>
             <li><a href="" class="link">Test</a></li>
           </ul>

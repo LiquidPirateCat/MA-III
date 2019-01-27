@@ -16,24 +16,33 @@
         <form action="/action_page.php">
 
         <div id="filter" class="collapse form-filter txt">
-          <input type="checkbox" name="voorstelling" value="Voorstellingen" checked> Voorstellingen <br>
-          <input type="checkbox" name="straatact" value="Straatacts" checked> Straatacts <br>
-          <input type="checkbox" name="familievoorstelling" value="Familievoorstellingen" checked> Familievoorstellingen <br>
+          <input type="checkbox" name="voorstelling" value="Voorstellingen"> Voorstellingen <br>
+          <input type="checkbox" name="straatact" value="Straatacts"> Straatacts <br>
+          <input type="checkbox" name="familievoorstelling" value="Familievoorstellingen"> Familievoorstellingen <br>
         </div>
         </form>
 </header>
 
 <main>
+<?php foreach($acts as $act): ?>
   <div class="grid-alignment">
+
   <article class="acts">
-  <h2 class="act-titel titel">i-Puppets</h2>
-  <p class="act-soort titel">Straatact</p>
-  <img class="act-foto" src="./assets/img/act-image-sm.png" width="150" height="150" alt="foto">
-  <div class="act-tijd">17u00</div>
+
+  <h2 class="act-titel titel"><?php echo $act['titel'];?></h2>
+  <p class="act-soort titel"><?php echo $act['soort'];?></p>
+  <img class="act-foto" src="<?php echo $act['img'];?>" width="150" height="150" alt="foto">
+  <div class="act-tijd"> <?php echo $act['uur'];?></div>
   <img class="act-datum" src="./assets/img/datum.png" alt="datum" width="70" height="70">
-  <div class="button act-discover"><a href="index.php?page=detail"></a> ontdek meer</div>
+  <div class="button act-discover"><a href="index.php?page=act-detail&amp;id=<?php echo $act['id'];?>"></a> ontdek meer</div>
+
   </article>
+
   </div>
+  <?php endforeach;?>
+
+
+   <!--  -->
 
 
 <a href="./assets/files/folder.pdf" download>
