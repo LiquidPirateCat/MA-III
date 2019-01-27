@@ -122,6 +122,15 @@ html {
   }
 }
 
+/* @media only screen and (min-width: 768px) {
+
+  .nav {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-areas: 'datum programma logo activiteiten praktisch';
+  }
+} */
+
 .hide {
   display: none;
 }
@@ -189,7 +198,7 @@ html {
 }
 
 .button:hover {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .2);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -474,6 +483,17 @@ hr {
   justify-content: space-between;
   margin-top: 3rem;
 }
+/*
+@media only screen and (min-width: 500px) {
+
+  .filter-btn-collapse {
+    display: none;
+  }
+
+  .form-filter {
+    display: inline;
+  }
+} */
 
 .acts {
   display: grid;
