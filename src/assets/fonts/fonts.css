@@ -8,3 +8,12 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Brandon';
+  src:
+    url('BrandonGrotesque-Light.woff2') format('woff2'),
+    url('BrandonGrotesque-Light.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+}
