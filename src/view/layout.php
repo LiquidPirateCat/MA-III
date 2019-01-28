@@ -35,10 +35,17 @@
 
   <body>
     <header>
+<<<<<<< HEAD
       <nav class="nav">
           <ul class="navigatie">
               <li>
                 <a href="index.php" class="link"><img src="./assets/img/logo-sm.png" alt="isb logo" class="logo-nav" /></a>
+=======
+      <nav>
+          <ul class="navigatie">
+              <li>
+                <a href="index.php" class="link"><img src="./assets/img/logo-sm.png" alt=""/></a>
+>>>>>>> 04db903dac7f57ffae58305ad266edef35b1c35a
               </li>
               <li><a href="index.php?page=programma" class="link beige">Programma</a></li>
               <li>
@@ -51,8 +58,13 @@
             </ul>
 
          <ul class="main-nav titel" id="js-menu">
+<<<<<<< HEAD
           <li><a href="index.php" class="link">Programma</a></li>
           <li><a href="index.php?page=programma" class="link">Activiteiten</a></li>
+=======
+          <li><a href="index.php" class="link">Home</a></li>
+          <li><a href="index.php?page=programma" class="link">Programma</a></li>
+>>>>>>> 04db903dac7f57ffae58305ad266edef35b1c35a
           <li><a href="index.php" class="link">Praktisch</a></li>
         </ul>
       </nav>
@@ -69,7 +81,11 @@
         </button>
         <div id="home" class="collapse">
           <ul class="footer-li">
+<<<<<<< HEAD
             <li><a href="" class="link ">Test</a></li>
+=======
+            <li><a href="" class="link">Test</a></li>
+>>>>>>> 04db903dac7f57ffae58305ad266edef35b1c35a
             <li><a href="" class="link">Test</a></li>
             <li><a href="" class="link">Test</a></li>
           </ul>
