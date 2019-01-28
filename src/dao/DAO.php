@@ -4,11 +4,7 @@ class DAO {
 
   // Properties
   private static $dbHost = "localhost";
-<<<<<<< HEAD
 	private static $dbName = "isb";
-=======
-	private static $dbName = "fifa";
->>>>>>> 04db903dac7f57ffae58305ad266edef35b1c35a
 	private static $dbUser = "root";
 	private static $dbPass = "root";
 	private static $sharedPDO;
