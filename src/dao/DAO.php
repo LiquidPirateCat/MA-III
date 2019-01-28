@@ -3,10 +3,10 @@
 class DAO {
 
   // Properties
-  private static $dbHost = "localhost";
-	private static $dbName = "isb";
-	private static $dbUser = "root";
-	private static $dbPass = "root";
+  private static $dbHost = "ID276560_isb.db.webhosting.be";
+	private static $dbName = "ID276560_isb";
+	private static $dbUser = "ID276560_isb";
+	private static $dbPass = "devine123";
 	private static $sharedPDO;
 	protected $pdo;
 
