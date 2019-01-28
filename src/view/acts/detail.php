@@ -9,7 +9,7 @@
   <a href="www.closeacttheater.com" class="link detail-website txt"><?php echo $act['website'];?></a>
   <div class="detail-praktisch">
     <div class="detail-datum titel"><span class="dag-filter">vrij</span><span class="datum-filter">24|08</span></div>
-    <div class="detail-tijdsduur titel">40 <span class="dag-filter">min</span> </div>
+    <div class="detail-tijdsduur titel"><?php echo $act['tijdsduur'];?> <span class="dag-filter">min</span> </div>
   </div>
   <p class="detail-locatie titel gray"><?php echo $act['locatie'];?></p>
   <p class="detail-uur titel"><?php echo $act['uur'];?></p>
@@ -20,18 +20,27 @@
 
 <section class="volgende-voorstelling">
 
-  <h2 class="titel blue next-show">Volgende voorstelling</h2>
+  <div class="grid-alignment">
 
-  <div class="grid-alignment pos-next">
-  <article class="acts">
-  <h2 class="act-titel titel">i-Puppets</h2>
-  <p class="act-soort titel">Straatact</p>
-  <img class="act-foto" src="./assets/img/act-image-sm.png" width="150" height="150" alt="foto">
-  <div class="act-tijd">17u00</div>
-  <img class="act-datum" src="./assets/img/datum.png" alt="datum" width="70" height="70">
-  <div class="button act-discover"><a href=""></a> ontdek meer</div>
+<article class="acts">
 
-  </div>
+<h2 class="act-titel titel"><?php echo $act['titel'];?></h2>
+<p class="act-soort titel"><?php echo $act['soort'];?></p>
+
+<div class="foto-container-acts" style="background-image: url(<?php echo "./" . $act['img'];?>)"></div>
+<!-- <img class="act-foto" src=""  alt="foto"> -->
+
+
+<?php if($act['uur'] != "Doorlopend"){ ?>
+<div class="act-tijd  "> <?php echo  $act['uur'];?></div>
+<?php } ?>
+
+<img class="act-datum <?php if($act['uur'] == "Doorlopend"){ echo "act-geen-tijd"; }?> " src="./assets/img/datum.png" alt="datum" width="85" height="85">
+<a href="index.php?page=detail&amp;id=<?php echo $act['id'];?>" class="act-discover button">ontdek meer</a>
+
+</article>
+
+</div>
 
 </section>
 </main>

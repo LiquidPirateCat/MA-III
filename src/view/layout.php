@@ -79,7 +79,7 @@
         <hr>
         <button  class= "footer-btn" type="button" data-toggle="collapse" data-target="#programma">
             <h3 class="date-txt">Programma</h3>
-            <p class="date-txt">&dharl;</p>
+            <p class="date-txt">&#x2B07;</p>
           </button>
           <div id="programma" class="collapse">
             <ul>
@@ -90,7 +90,7 @@
           <hr>
           <button  class= "footer-btn" type="button" data-toggle="collapse" data-target="#activiteiten">
               <h3 class="date-txt">Activiteiten</h3>
-              <p class="date-txt">&dharl;</p>
+              <p class="date-txt">&#x2B07;</p>
             </button>
             <div id="activiteiten" class="collapse">
               <ul>
@@ -101,7 +101,7 @@
             <hr>
             <button  class= "footer-btn" type="button" data-toggle="collapse" data-target="#praktisch">
                 <h3 class="date-txt">Praktisch</h3>
-                <p class="date-txt">&dharl;</p>
+                <p class="date-txt">&#x2B07;</p>
               </button>
               <div id="praktisch" class="collapse">
                 <ul>

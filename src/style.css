@@ -139,7 +139,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 11rem;
   margin-top: 2rem;
 }
 
@@ -160,7 +159,8 @@ html {
 
 .robot-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .intro-article {
@@ -172,7 +172,7 @@ html {
     url(./assets/img/bg-blue-sm.svg),
     url(./assets/img/robot-sm.png);
   background-position: top center, -70rem;
-  margin-top: -30rem;
+  margin-top: -20rem;
   background-size: cover, 20rem 30rem;
   background-repeat: no-repeat;
   padding: 10rem 0;
@@ -645,7 +645,7 @@ hr {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  width: 90%;
+  width: 95%;
   max-width: 50rem;
 }
 
@@ -768,4 +768,14 @@ hr {
 .footer-link-sm {
   font-family: 'Brandon';
   line-height: 3rem;
+  color: var(--blauw);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pos-download {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
 }

@@ -4,7 +4,7 @@
         <img src="./assets/img/titel.png" alt="IBS header background" />
 
         <div class="robot-flex">
-        <img class="robot" src="./assets/img/robot-sm.png" alt="">
+        <img class="robot" src="./assets/img/robot-sm.png" alt="" width="85" height="141">
 
 
 
