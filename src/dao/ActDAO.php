@@ -36,6 +36,14 @@ class ActDAO extends DAO {
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
+  public function selectNextId($id){
+    $sql = "SELECT * FROM `isb_acts` WHERE `id`=:id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
+
   public function selectSoorten() {
     $sql = "SELECT DISTINCT `soort` FROM `isb_acts` ORDER BY `soort` ASC";
     $stmt = $this->pdo->prepare($sql);

@@ -49,13 +49,20 @@
 
       <article class="locatie">
         <h2 class="hide">locatie</h2>
-        <img
+        <!-- <img
           src="./assets/img/locatie-sm.png"
           width="146"
           height="26"
           alt="Locatie"
-        />
-        <p class="locatie-txt txt">
+        /> -->
+
+        <div class="locationflex">
+        <img
+          src="./assets/img/locatie-sm.png"
+          width="146"
+          height="26"
+          alt="Locatie"/>
+          <p class="locatie-txt txt">
           Aangezien het grote succes van vorig jaar, doen we het opnieuw op
           dezelfde locatie!
           <span class="bold">Op en rond de beverseplein in Beveren</span> zal er
@@ -64,6 +71,9 @@
 
         <div class="button btn-width">ontdek de locaties</div>
         <div class="button btn-width btn-border">parkeermogelijkheden</div>
+
+        </div>
+
         <img src="./assets/img/world-sm.png" width="297" height="278" alt="" />
       </article>
 

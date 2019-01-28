@@ -15,6 +15,10 @@ html {
   min-height: 2.7em;
 }
 
+.navlink {
+  font-size: 1.5rem;
+}
+
 .main-nav {
   display: none;
   margin-bottom: 5rem;
@@ -68,20 +72,37 @@ html {
 }
 
 .navigatie {
+  display: grid;
+  justify-items: center;
+
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-template-areas: 'drie . twee . zes';
+
   text-transform: uppercase;
   font-family: 'Abrade Heavy';
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   background-image: url(./assets/img/nav-sm.png);
 
   background-repeat: no-repeat;
-  padding-top: 4rem;
+  padding-top: 3rem 0;
   background-size: 100% 100%;
   height: auto;
   background-position: center center;
 
   padding: 1rem .5rem;
+  /* @media (--lg) {
+    max-width: 99.2rem;
+  } */
+  @media (--md) {
+    background-image: url(./assets/img/nav-md.png);
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    grid-template-areas: 'een twee drie vier vijf';
+  }
 }
 
 .navigatie li:nth-child(2) {
@@ -98,9 +119,87 @@ html {
   color: var(--beige);
 }
 
-.header {
+.nav-datum {
+  grid-area: een;
+  display: none;
+
+  @media (--md) {
+    display: inline;
+  }
+}
+
+.nav-programma {
+  grid-area: twee;
+  font-size: 3rem;
+
+  @media (--md) {
+    display: inline;
+    font-size: 1.6rem;
+  }
+}
+
+.nav-logo {
+  grid-area: drie;
+
+  @media (--md) {
+  }
+}
+
+.nav-activiteiten {
+  grid-area: vier;
+  display: none;
+
+  @media (--md) {
+    display: inline;
+  }
+}
+
+.nav-praktisch {
+  grid-area: vijf;
+  display: none;
+
+  @media (--md) {
+    display: inline;
+  }
+}
+
+.nav-burger {
+  grid-area: zes;
+
+  @media (--md) {
+    display: none;
+  }
+}
+
+.locationbuttons {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  @media (--md) {
+    flex-flow: row;
+  }
+}
+
+.locationflex {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  @media (--lg) {
+    order: 2;
+  }
+}
+
+.world {
+  order: 1;
+}
+
+.header {
+  display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
   background-image: url(./assets/img/bg-header-sm_1.svg);
@@ -111,20 +210,20 @@ html {
   /* background-size: cover 100%;
   background-repeat: no-repeat;
   background-position: center center; */
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 20rem;
 }
 
-@media only screen and (min-width: 450px) {
+/* @media only screen and (min-width: 450px) {
 
   .header {
     padding-top: 10rem;
   }
-}
+} */
 
 /* @media only screen and (min-width: 768px) {
 
-  .nav {
+  .navigatie {
     padding-top: 10rem;
     display: grid;
     grid-template-areas: 'datum programma logo activiteiten praktisch';
@@ -140,6 +239,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+  margin-left: 11rem;
 }
 
 .date-txt {
@@ -175,14 +275,21 @@ html {
   margin-top: -20rem;
   background-size: cover, 20rem 30rem;
   background-repeat: no-repeat;
-  padding: 10rem 0;
-  padding-bottom: 2;
+  padding: 10rem 0 4rem;
 }
 
 .intro-txt {
   color: white;
   text-align: center;
   margin-bottom: 4rem;
+
+  @media (--md) {
+    max-width: 75%;
+  }
+
+  @media (--lg) {
+    max-width: 50%;
+  }
 }
 
 .txt {
@@ -220,6 +327,28 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (--lg) {
+    flex-direction: row;
+    max-width: 60%;
+
+    justify-content: center;
+  }
+}
+
+.main-programma {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+
+  @media (--md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (--lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .bold {
@@ -229,6 +358,10 @@ html {
 .locatie-txt {
   margin: 1rem 0;
   text-align: center;
+
+  @media (--md) {
+    max-width: 60%;
+  }
 }
 
 .titel {
@@ -238,17 +371,22 @@ html {
 }
 
 .btn-width {
-  width: 80%;
+  /* width: 80%; */
   max-width: 30rem;
   text-align: center;
+  margin-bottom: 1rem;
+
+  @media (--md) {
+    margin-right: 1rem;
+
+    margin-bottom: 0;
+  }
 }
 
 .btn-border {
   background-color: transparent;
   border: .2rem solid var(--pink);
   color: var(--pink);
-  margin-top: 1rem;
-  margin-bottom: 4rem;
 }
 
 .aftermovie {
@@ -295,12 +433,12 @@ html {
 .footer-li {
   color: var(--pink);
 }
-
+/*
 .footer-position-link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+} */
 
 .updates {
   background-color: var(--pink);
@@ -375,6 +513,16 @@ html {
     'b-f b-f'
     'b b'
     'w wd';
+
+  @media (--md) {
+    grid-template-areas:
+      'b b b-f'
+      'w wd b-f';
+  }
+
+  @media (--lg) {
+    grid-template-areas: 'b wd w . b-f b-f';
+  }
 }
 
 .grid-positie {

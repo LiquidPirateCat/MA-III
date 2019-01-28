@@ -34,14 +34,24 @@
   </head>
 
   <body>
-    <header>
+
       <nav class="nav">
           <ul class="navigatie">
-              <li>
+              <!-- <li>
                 <a href="index.php" class="link"><img src="./assets/img/logo-sm.png" alt="isb logo" class="logo-nav" /></a>
+              </li> -->
+              <li class="nav-datum">
+                <a href="index.php" class="link"><img src="./assets/img/datum-med.png" height="100px" alt="isb logo" class="" /></a>
               </li>
-              <li><a href="index.php?page=programma" class="link beige">Programma</a></li>
-              <li>
+              <li class="nav-logo">
+                <a href="index.php" class="link"><img src="./assets/img/logo-sm.png" alt="isb logo" class="" /></a>
+              </li>
+              <li class="nav-programma"><a href="index.php?page=programma" class="link beige navlink">Programma</a></li>
+              <li class="nav-activiteiten"><a href="index.php?page=programma" class="link beige navlink">activiteiten</a></li>
+              <li class="nav-praktisch"><a href="index.php?page=programma" class="link beige navlink">praktisch</a></li>
+              <li class="nav-burger">
+
+
                 <div class="container-hamburger" id="js-navbar-toggle" onclick="myFunction(this)">
                   <div class="bar1"></div>
                   <div class="bar2"></div>

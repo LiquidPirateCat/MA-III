@@ -11,14 +11,27 @@
   <button  class="button filter-program-btn filter-btn-collapse btn-filter-pos" type="button" data-toggle="collapse" data-target="#filter"><img width="20" height="20" class="filter-img" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9Ii01IDAgMzk0IDM5NC4wMDAwMyIgd2lkdGg9IjY0cHgiPjxwYXRoIGQ9Im0zNjcuODIwMzEyIDBoLTM1MS4yNjE3MThjLTYuMTk5MjE5LS4wMTE3MTg4LTExLjg3ODkwNiAzLjQ0OTIxOS0xNC43MTA5MzggOC45NjA5MzgtMi44NzEwOTQgNS41ODU5MzctMi4zNjcxODcgMTIuMzEyNSAxLjMwMDc4MiAxNy40MTQwNjJsMTI4LjY4NzUgMTgxLjI4NTE1NmMuMDQyOTY4LjA2MjUuMDg5ODQzLjEyMTA5NC4xMzI4MTIuMTgzNTk0IDQuNjc1NzgxIDYuMzEyNSA3LjIwNzAzMSAxMy45NjA5MzggNy4yMTg3NSAyMS44MTY0MDZ2MTQ3LjgwMDc4MmMtLjAyNzM0NCA0LjM3NSAxLjY5MTQwNiA4LjU4MjAzMSA0Ljc3MzQzOCAxMS42ODc1IDMuMDg1OTM3IDMuMTAxNTYyIDcuMjgxMjUgNC44NTE1NjIgMTEuNjU2MjUgNC44NTE1NjIgMi4yMjI2NTYtLjAwMzkwNiA0LjQyNTc4MS0uNDQ1MzEyIDYuNDgwNDY4LTEuMzAwNzgxbDcyLjMxMjUtMjcuNTcwMzEzYzYuNDc2NTYzLTEuOTgwNDY4IDEwLjc3NzM0NC04LjA5Mzc1IDEwLjc3NzM0NC0xNS40NTMxMjV2LTEyMC4wMTU2MjVjLjAxMTcxOS03Ljg1NTQ2OCAyLjU0Mjk2OS0xNS41MDM5MDYgNy4yMTQ4NDQtMjEuODE2NDA2LjA0Mjk2OC0uMDYyNS4wODk4NDQtLjEyMTA5NC4xMzI4MTItLjE4MzU5NGwxMjguNjkxNDA2LTE4MS4yODkwNjJjMy42Njc5NjktNS4wOTc2NTYgNC4xNzE4NzYtMTEuODIwMzEzIDEuMzAwNzgyLTE3LjQwNjI1LTIuODI4MTI1LTUuNTE1NjI1LTguNTExNzE5LTguOTc2NTYyOC0xNC43MDcwMzItOC45NjQ4NDR6bTAgMCIgZmlsbD0iIzk0OTQ5NCIvPjwvc3ZnPgo=" />Filter</button>
 
 
-<div class="position-collapse">
-<form action="/action_page.php">
+
+
+  <div class="position-collapse">
 <div id="filter" class="collapse">
-          <input type="checkbox" name="voorstelling" value="Voorstellingen" checked> Voorstellingen <br>
-          <input type="checkbox" name="straatact" value="Straatacts" checked> Straatacts <br>
-          <input type="checkbox" name="familievoorstelling" value="Familievoorstellingen" checked> Familie <br>
-        </div>
-        </form>
+<section class="filter">
+    <h2 class="hidden">Filter</h2>
+    <form action="index.php?page=programma" class="filter__form">
+    <input type="hidden" name="page" value="programma"/>
+    <input type="hidden" name="action" value="filter" />
+      <label for="term" class="form__label">
+        <span class="hidden">Search</span>
+        <select name="soort">
+          <option value="">Alle acts</option>
+        <?php foreach($soorten as $soort):?>
+          <option value="<?php echo $soort['soort'];?>" <?php if($soort == $soort['soort']) echo 'selected';?>><?php echo $soort['soort'];?></option>
+        <?php endforeach;?>
+        </select>
+      </label>
+      <input type="submit" value="Filter" class="form__submit input input--button">
+    </form>
+  </section>
 </div>
 
 
@@ -29,7 +42,7 @@
 
 </header>
 
-<main>
+<main class="main-programma">
 <?php foreach($acts as $act): ?>
   <div class="grid-alignment">
 
