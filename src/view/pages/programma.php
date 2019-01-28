@@ -37,7 +37,7 @@
 
 
   <div class="act-tijd"> <?php echo  $act['uur'];?></div>
-  <img class="act-datum" src="./assets/img/datum.png" alt="datum" width="70" height="70">
+  <img class="act-datum" src="./assets/img/datum.png" alt="datum" width="90" height="90">
   <a href="index.php?page=detail&amp;id=<?php echo $act['id'];?>" class="act-discover button">ontdek meer</a>
 
   </article>
