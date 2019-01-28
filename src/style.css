@@ -498,6 +498,7 @@ hr {
 .acts {
   display: grid;
   max-width: 70%;
+  margin-top: 5rem;
 
   grid-template-areas:
     'titel titel titel'
@@ -510,6 +511,7 @@ hr {
   grid-area: titel;
   justify-self: center;
   color: var(--pink);
+  text-align: center;
 }
 
 .act-soort {
@@ -549,9 +551,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-family: 'Abrade Heavy';
   color: white;
+  text-align: center;
 }
 
 .act-discover {
@@ -560,6 +563,7 @@ hr {
   height: 5rem;
   max-width: 28rem;
   background-color: #f2ccaa;
+  color: white;
   text-align: center;
   display: flex;
   align-items: center;
