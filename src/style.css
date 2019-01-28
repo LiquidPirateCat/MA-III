@@ -152,9 +152,15 @@ html {
 }
 
 .robot {
-  position: absolute;
+  position: relative;
+  /* position: relative;
   top: 180px;
-  left: 10px;
+  left: 10px; */
+}
+
+.robot-flex {
+  display: flex;
+  justify-content: center;
 }
 
 .intro-article {
@@ -166,7 +172,7 @@ html {
     url(./assets/img/bg-blue-sm.svg),
     url(./assets/img/robot-sm.png);
   background-position: top center, -70rem;
-  margin-top: -20rem;
+  margin-top: -30rem;
   background-size: cover, 20rem 30rem;
   background-repeat: no-repeat;
   padding: 10rem 0;
@@ -288,6 +294,12 @@ html {
 
 .footer-li {
   color: var(--pink);
+}
+
+.footer-position-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .updates {
@@ -417,7 +429,8 @@ hr {
   grid-template-areas:
     'pr pr pr'
     'vrij zat zon'
-    '. filter .';
+    '. filter .'
+    '. collapse .';
 }
 
 @media only screen and (min-width: 600px) {
@@ -425,6 +438,11 @@ hr {
   .filter-sectie {
     grid-gap: 4rem;
   }
+}
+
+.position-collapse {
+  grid-area: collapse;
+  font-family: 'Brandon';
 }
 
 .full-program-btn {
@@ -445,6 +463,7 @@ hr {
   font-family: 'Abrade Heavy';
   color: var(--pink);
   justify-self: center;
+  grid-area: filter;
 }
 
 .filter-btn:hover {
@@ -481,7 +500,6 @@ hr {
   width: 13rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
 }
 /*
 @media only screen and (min-width: 500px) {
@@ -548,8 +566,8 @@ hr {
   grid-area: tijd;
   background-color: var(--pink);
   border-radius: 50rem;
-  width: 9rem;
-  height: 9rem;
+  width: 8.5rem;
+  height: 8.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -574,14 +592,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 18rem;
-}
-
-@media only screen and (max-width: 400px) {
-
-  .acts {
-    margin: 5rem 2rem;
-  }
+  min-width: 16rem;
 }
 
 @media only screen and (min-width: 400px) {
@@ -701,7 +712,10 @@ hr {
 
 .gold {
   color: #f2ccaa;
-  font-size: 5rem;
+  font-size: 4rem;
+  margin-top: 2rem;
+  max-width: 60rem;
+  text-align: center;
 }
 
 .black {
@@ -749,4 +763,9 @@ hr {
   flex-direction: column;
   font-size: 3rem;
   margin-top: 2rem;
+}
+
+.footer-link-sm {
+  font-family: 'Brandon';
+  line-height: 3rem;
 }

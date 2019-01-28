@@ -3,22 +3,30 @@
         <h1 class="hide">INTERNATIONAAL STRAATTHEATER</h1>
         <img src="./assets/img/titel.png" alt="IBS header background" />
 
+        <div class="robot-flex">
+        <img class="robot" src="./assets/img/robot-sm.png" alt="">
 
 
-        <div class="date">
-          <p class="date-txt">alle ogen gericht op</p>
 
-          <img
-            src="./assets/img/datums-sm.png"
-            alt="VRIJ 24/08 ZAT 25/08 ZO 26/08"
-          />
+<div class="date">
+  <p class="date-txt">alle ogen gericht op</p>
+
+  <img
+    src="./assets/img/datums-sm.png"
+    alt="VRIJ 24/08 ZAT 25/08 ZO 26/08"
+  />
+</div>
+
         </div>
+
+
       </div>
+
     </header>
 
     <main>
       <article class="intro-article">
-          <img class="robot" src="./assets/img/robot-sm.png" alt="">
+
         <h2 class="hide">een wereld vol fantasie</h2>
         <img src="./assets/img/wereld-sm.png" alt="Een wereld vol fantasie" />
         <p class="intro-txt txt">

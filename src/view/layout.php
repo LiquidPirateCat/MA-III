@@ -69,9 +69,11 @@
         </button>
         <div id="home" class="collapse">
           <ul class="footer-li">
-            <li><a href="" class="link ">Test</a></li>
-            <li><a href="" class="link">Test</a></li>
-            <li><a href="" class="link">Test</a></li>
+            <li><a href="" class="link footer-link-sm ">ISB</a></li>
+            <li><a href="" class="link footer-link-sm">Voorstellingen</a></li>
+            <li><a href="" class="link footer-link-sm">Locatie</a></li>
+            <li><a href="" class="link footer-link-sm">Activiteiten</a></li>
+            <li><a href="" class="link footer-link-sm">Aftermovie</a></li>
           </ul>
         </div>
         <hr>
@@ -81,9 +83,8 @@
           </button>
           <div id="programma" class="collapse">
             <ul>
-              <li class="link">test</li>
-              <li><a href="" class="link">Test</a></li>
-              <li><a href="" class="link">Test</a></li>
+              <li><a href="" class="link footer-link-sm">Uurrooster</a></li>
+              <li><a href="" class="link footer-link-sm">Voorstellingen</a></li>
             </ul>
           </div>
           <hr>
@@ -93,9 +94,8 @@
             </button>
             <div id="activiteiten" class="collapse">
               <ul>
-                <li>test</li>
-                <li><a href="" class="link">Test</a></li>
-                <li><a href="" class="link">Test</a></li>
+                <li><a href="" class="link footer-link-sm">Ontdek alle activiteiten</a></li>
+                <li><a href="" class="link footer-link-sm">Voorstellingen</a></li>
               </ul>
             </div>
             <hr>
@@ -105,9 +105,11 @@
               </button>
               <div id="praktisch" class="collapse">
                 <ul>
-                  <li>test</li>
-                  <li><a href="" class="link">Test</a></li>
-                  <li><a href="" class="link">Test</a></li>
+                  <li><a href="" class="link footer-link-sm">Datums</a></li>
+                  <li><a href="" class="link footer-link-sm">Locatie</a></li>
+                  <li><a href="" class="link footer-link-sm">Contacteer ons</a></li>
+                  <li><a href="" class="link footer-link-sm">Social media</a></li>
+                  <li><a href="" class="link footer-link-sm">Vrijwilligerswerk</a></li>
                 </ul>
               </div>
       </div>

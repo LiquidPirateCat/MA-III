@@ -12,7 +12,7 @@
     <div class="detail-tijdsduur titel">40 <span class="dag-filter">min</span> </div>
   </div>
   <p class="detail-locatie titel gray"><?php echo $act['locatie'];?></p>
-  <p class="detail-uur titel"><?php echo $act['uur'];?>0</p>
+  <p class="detail-uur titel"><?php echo $act['uur'];?></p>
   </article>
 
   <img src="./assets/img/robots.jpg" width="100%" alt="robots" class="detail-omslagfoto">
