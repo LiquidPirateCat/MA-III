@@ -1,9 +1,7 @@
 <main>
 
 <article class="detail-act">
-  <div class="crop">
-  <img src="./assets/img/robots.jpg" alt="robots" class="detail-foto">
-  </div>
+<div class="foto-container-acts detail-img" style="background-image: url(<?php echo "./" . $act['img'];?>)"></div>
 
   <h1 class="titel gold">i-puppets</h1>
   <h2 class="detail-groep titel black">Close-act theatre</h2>
